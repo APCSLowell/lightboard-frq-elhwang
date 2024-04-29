@@ -35,7 +35,7 @@ public class LightBoard
      }
      if(lights[r][c] && count%2 == 0)
        return false;
-    if(!lights[r][c] && count%3 == 0)
+    if(lights[r][c] == false && count%3 == 0)
       return true;
    return lights[row][col];
   }
